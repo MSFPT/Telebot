@@ -16,7 +16,11 @@ git clone https://github.com/MSFPT/Telebot
 ```php
 <?php
   
-  require('Telebot/index.php');
+  if (!file_exists('JsonBase.php')) {
+    copy('https://raw.githubusercontent.com/msfpt/Telebot/main/index.php', 'Telebot.php');
+  }
+  
+  require('Telebot.php');
 
   $TeleBot = new Telebot('TOKEN');
 
@@ -31,8 +35,12 @@ git clone https://github.com/MSFPT/Telebot
 
 ```php
 <?php
+
+  if (!file_exists('JsonBase.php')) {
+    copy('https://raw.githubusercontent.com/msfpt/Telebot/main/index.php', 'Telebot.php');
+  }
   
-  require('Telebot/index.php');
+  require('Telebot.php');
   
   $TeleBot = new Telebot('TOKEN');
 
