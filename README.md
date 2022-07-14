@@ -16,7 +16,7 @@ git clone https://github.com/MSFPT/Telebot
 ```php
 <?php
   
-  if (!file_exists('JsonBase.php')) {
+  if (!file_exists('Telebot.php')) {
     copy('https://raw.githubusercontent.com/msfpt/Telebot/main/index.php', 'Telebot.php');
   }
   
@@ -36,7 +36,7 @@ git clone https://github.com/MSFPT/Telebot
 ```php
 <?php
 
-  if (!file_exists('JsonBase.php')) {
+  if (!file_exists('Telebot.php')) {
     copy('https://raw.githubusercontent.com/msfpt/Telebot/main/index.php', 'Telebot.php');
   }
   
